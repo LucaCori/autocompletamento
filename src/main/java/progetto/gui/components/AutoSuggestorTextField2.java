@@ -26,7 +26,7 @@ import javax.swing.event.DocumentListener;
  */
 
 @SuppressWarnings("serial")
-public class AutoSuggestorTextField  extends JTextField {
+public class AutoSuggestorTextField2 extends JTextField {
 
     private final Window container;
     private JPanel suggestionsPanel;
@@ -49,10 +49,11 @@ public class AutoSuggestorTextField  extends JTextField {
             checkForAndShowSuggestions();
         }
     };
+    
     private final Color suggestionsTextColor;
     private final Color suggestionFocusedColor;
 
-    public AutoSuggestorTextField(Window mainWindow, ArrayList<String> words, Color popUpBackground, Color textColor, Color suggestionFocusedColor, float opacity) {
+    public AutoSuggestorTextField2(Window mainWindow, ArrayList<String> words, Color popUpBackground, Color textColor, Color suggestionFocusedColor, float opacity) {
     	super();
     	
     	this.suggestionsTextColor = textColor;

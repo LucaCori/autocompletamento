@@ -15,9 +15,9 @@ import progetto.Words;
  */
 
 @SuppressWarnings("serial")
-public class AutoSuggestorJTextField extends JTextField{
+public class AutoSuggestorTextField1 extends JTextField {
 
-	public AutoSuggestorJTextField() {
+	public AutoSuggestorTextField1() {
         super();
         List<String> words = Words.getWords();
         AutoCompleteDecorator.decorate(this, words, false);

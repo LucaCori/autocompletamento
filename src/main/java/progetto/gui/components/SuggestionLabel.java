@@ -18,18 +18,15 @@ public class SuggestionLabel extends JLabel {
 
     private boolean focused = false;
     private final JWindow autoSuggestionsPopUpWindow;
-    private final AutoSuggestorTextField textField;
+    private final AutoSuggestorTextField2 textField;
     private Color suggestionsTextColor, suggestionBorderColor;
 
-    public SuggestionLabel(String string, final Color borderColor, Color suggestionsTextColor, AutoSuggestorTextField autoSuggestor) {
+    public SuggestionLabel(String string, final Color borderColor, Color suggestionsTextColor, AutoSuggestorTextField2 autoSuggestor) {
         super(string);
-
         this.suggestionsTextColor = suggestionsTextColor;
- 
         this.textField = autoSuggestor;
         this.suggestionBorderColor = borderColor;
         this.autoSuggestionsPopUpWindow = autoSuggestor.getAutoSuggestionPopUpWindow();
-
         initComponent();
     }
 

@@ -27,11 +27,7 @@ public class Words {
 	}
 	
 	public static String[] getWordsObjects() {
-		String[] words = new String[elements.length];
-		for(int i = 0; i < elements.length; i++) {
-			words[i] = elements[i];
-		}
-		return words;
+		return getWords().toArray(new String[0]);
 	}
 	
 }
