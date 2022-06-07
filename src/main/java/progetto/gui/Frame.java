@@ -48,9 +48,12 @@ public class Frame extends JFrame {
         this.textField.setColumns(10);
         this.getContentPane().add(panel, BorderLayout.WEST);      
         this.comboBox.setBounds(113, 28, 200, 22);
+        this.button.setComboBox(comboBox);
         this.setVisible(true);
         this.jtextfield.setColumns(10);
+        this.button.setJTextField(jtextfield);
         this.textField_3.setColumns(10);
+        this.button.setTextField_3(textField_3);
         
         JLabel lblNewLabel = new JLabel("Inserisci la frase");
         
@@ -79,24 +82,25 @@ public class Frame extends JFrame {
         					.addComponent(comboBox, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
         					.addContainerGap())
         				.addGroup(gl_panel.createSequentialGroup()
-        					.addGroup(gl_panel.createParallelGroup(Alignment.TRAILING, false)
-        						.addGroup(Alignment.LEADING, gl_panel.createSequentialGroup()
+        					.addGroup(gl_panel.createParallelGroup(Alignment.LEADING)
+        						.addGroup(gl_panel.createSequentialGroup()
         							.addComponent(lblNewLabel_3)
         							.addPreferredGap(ComponentPlacement.RELATED)
-        							.addComponent(textField_3, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        						.addGroup(Alignment.LEADING, gl_panel.createSequentialGroup()
+        							.addComponent(textField_3, GroupLayout.DEFAULT_SIZE, 86, Short.MAX_VALUE))
+        						.addGroup(gl_panel.createSequentialGroup()
         							.addComponent(lblNewLabel)
         							.addPreferredGap(ComponentPlacement.RELATED)
         							.addComponent(textField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)))
-        					.addContainerGap())))
+        					.addGap(317))))
         );
         gl_panel.setVerticalGroup(
-        	gl_panel.createParallelGroup(Alignment.LEADING)
-        		.addGroup(Alignment.TRAILING, gl_panel.createSequentialGroup()
+        	gl_panel.createParallelGroup(Alignment.TRAILING)
+        		.addGroup(gl_panel.createSequentialGroup()
+        			.addGap(0, 0, Short.MAX_VALUE)
         			.addGroup(gl_panel.createParallelGroup(Alignment.BASELINE)
         				.addComponent(lblNewLabel_3)
         				.addComponent(textField_3, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
-        			.addPreferredGap(ComponentPlacement.RELATED, 17, Short.MAX_VALUE)
+        			.addGap(17)
         			.addGroup(gl_panel.createParallelGroup(Alignment.BASELINE)
         				.addComponent(lblNewLabel)
         				.addComponent(textField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
