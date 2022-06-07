@@ -7,8 +7,6 @@ public class Words {
 	
 	static String[] elements = {
 			"hello",
-			"Hi Bob !",
-			"Hi Lucy !",
 			"heritage",
 			"happiness",
 			"goodbye",
