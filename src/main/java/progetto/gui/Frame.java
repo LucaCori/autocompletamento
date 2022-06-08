@@ -55,13 +55,13 @@ public class Frame extends JFrame {
         this.textField_3.setColumns(10);
         this.button.setTextField_3(textField_3);
         
-        JLabel lblNewLabel = new JLabel("Inserisci la frase");
+        JLabel lblNewLabel = new JLabel("AutoSuggestor");
         
-        JLabel lblNewLabel_1 = new JLabel("Inserisci la frase");
+        JLabel lblNewLabel_1 = new JLabel("AutoCompleteDecorator");
         
-        JLabel lblNewLabel_2 = new JLabel("Inserisci la frase");
+        JLabel lblNewLabel_2 = new JLabel("AutoCompleteSupport");
         
-        JLabel lblNewLabel_3 = new JLabel("Inserisci la frase");
+        JLabel lblNewLabel_3 = new JLabel("Autocomplete");
         
         GroupLayout gl_panel = new GroupLayout(panel);
         gl_panel.setHorizontalGroup(
