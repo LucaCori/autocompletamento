@@ -7,7 +7,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import progetto.Words;
-import progetto.gui.components.AutoSuggestorJComboBox;
+import progetto.gui.components.AutoSuggestorComboBox;
 import progetto.gui.components.AutoSuggestorTextField1;
 import progetto.gui.components.AutoSuggestorTextField2;
 import progetto.gui.components.AutoSuggestorTextField3;
@@ -21,7 +21,7 @@ import javax.swing.JLabel;
 @SuppressWarnings("serial")
 public class Frame extends JFrame {
 
-	private AutoSuggestorJComboBox comboBox = new AutoSuggestorJComboBox();
+	private AutoSuggestorComboBox comboBox = new AutoSuggestorComboBox();
 	
     private JPanel panel = new JPanel();       
     

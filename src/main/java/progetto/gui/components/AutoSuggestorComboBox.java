@@ -13,9 +13,9 @@ import progetto.Words;
  */
 
 @SuppressWarnings("serial")
-public class AutoSuggestorJComboBox extends JComboBox<String>{
+public class AutoSuggestorComboBox extends JComboBox<String>{
 
-	public AutoSuggestorJComboBox() {
+	public AutoSuggestorComboBox() {
         super();
         String[] elements = Words.getWordsObjects();
         AutoCompleteSupport.install((JComboBox<String>)this, GlazedLists.eventListOf(elements));

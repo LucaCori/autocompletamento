@@ -17,9 +17,9 @@ import progetto.Words;
  */
 
 @SuppressWarnings("serial")
-public class AutoSuggestorJComboBox2 extends JComboBox<String> {
+public class AutoSuggestorComboBox2 extends JComboBox<String> {
 
-	public AutoSuggestorJComboBox2() {
+	public AutoSuggestorComboBox2() {
         super();
         DefaultComboBoxModel model = new DefaultComboBoxModel(Words.getWordsObjects());
         this.setModel(model);

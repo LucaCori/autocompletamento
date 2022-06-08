@@ -5,8 +5,10 @@ import java.util.List;
 
 public class Words {
 	
-	static String[] elements = {
+	private static String[] elements = {
 			"hello",
+			"hi Dave",
+			"hi Bob",
 			"heritage",
 			"happiness",
 			"goodbye",
@@ -20,8 +22,8 @@ public class Words {
 	
 	public static List<String> getWords() {
 		List<String> words = new ArrayList<>();
-		for(int i = 0; i < elements.length; i++) {
-			words.add(elements[i]);
+		for(int i = 0; i < Words.elements.length; i++) {
+			words.add(Words.elements[i]);
 		}
         return words;
 	}
